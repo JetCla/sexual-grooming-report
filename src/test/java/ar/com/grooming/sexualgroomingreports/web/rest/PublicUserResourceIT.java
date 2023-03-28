@@ -2,11 +2,12 @@ package ar.com.grooming.sexualgroomingreports.web.rest;
 
 import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.hasItems;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import ar.com.grooming.sexualgroomingreports.IntegrationTest;
-import ar.com.grooming.sexualgroomingreports.config.TestSecurityConfiguration;
 import ar.com.grooming.sexualgroomingreports.domain.User;
 import ar.com.grooming.sexualgroomingreports.repository.UserRepository;
 import ar.com.grooming.sexualgroomingreports.security.AuthoritiesConstants;

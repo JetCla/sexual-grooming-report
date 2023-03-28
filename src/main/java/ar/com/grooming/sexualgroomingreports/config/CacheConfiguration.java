@@ -1,7 +1,9 @@
 package ar.com.grooming.sexualgroomingreports.config;
 
 import java.time.Duration;
-import org.ehcache.config.builders.*;
+import org.ehcache.config.builders.CacheConfigurationBuilder;
+import org.ehcache.config.builders.ExpiryPolicyBuilder;
+import org.ehcache.config.builders.ResourcePoolsBuilder;
 import org.ehcache.jsr107.Eh107Configuration;
 import org.hibernate.cache.jcache.ConfigSettings;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +13,8 @@ import org.springframework.boot.info.BuildProperties;
 import org.springframework.boot.info.GitProperties;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.interceptor.KeyGenerator;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.cloud.client.serviceregistry.Registration;
-import org.springframework.context.annotation.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import tech.jhipster.config.JHipsterProperties;
 import tech.jhipster.config.cache.PrefixedKeyGenerator;
 
@@ -51,6 +51,13 @@ public class CacheConfiguration {
             createCache(cm, ar.com.grooming.sexualgroomingreports.domain.User.class.getName());
             createCache(cm, ar.com.grooming.sexualgroomingreports.domain.Authority.class.getName());
             createCache(cm, ar.com.grooming.sexualgroomingreports.domain.User.class.getName() + ".authorities");
+            createCache(cm, ar.com.grooming.sexualgroomingreports.domain.Report.class.getName());
+            createCache(cm, ar.com.grooming.sexualgroomingreports.domain.Report.class.getName() + ".reportLogs");
+            createCache(cm, ar.com.grooming.sexualgroomingreports.domain.ReportLog.class.getName());
+            createCache(cm, ar.com.grooming.sexualgroomingreports.domain.ReportComments.class.getName());
+            createCache(cm, ar.com.grooming.sexualgroomingreports.domain.ReportComments.class.getName() + ".reports");
+            createCache(cm, ar.com.grooming.sexualgroomingreports.domain.Victim.class.getName());
+            createCache(cm, ar.com.grooming.sexualgroomingreports.domain.Report.class.getName() + ".reportComments");
             // jhipster-needle-ehcache-add-entry
         };
     }

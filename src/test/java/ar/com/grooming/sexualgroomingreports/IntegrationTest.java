@@ -1,6 +1,5 @@
 package ar.com.grooming.sexualgroomingreports;
 
-import ar.com.grooming.sexualgroomingreports.SexualGroomingReportsApp;
 import ar.com.grooming.sexualgroomingreports.config.AsyncSyncConfiguration;
 import ar.com.grooming.sexualgroomingreports.config.EmbeddedSQL;
 import ar.com.grooming.sexualgroomingreports.config.TestSecurityConfiguration;

@@ -1,0 +1,32 @@
+{
+  "sexualGroomingReportsApp": {
+    "report": {
+      "home": {
+        "title": "Reports",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Report",
+        "createOrEditLabel": "Crear o editar Report",
+        "notFound": "Ningún Reports encontrado"
+      },
+      "created": "Un nuevo Report ha sido creado con el identificador {{ param }}",
+      "updated": "Un Report ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Report ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Report {{ id }}?"
+      },
+      "detail": {
+        "title": "Report"
+      },
+      "id": "ID",
+      "number": "Number",
+      "date": "Date",
+      "officeAssigned": "Office Assigned",
+      "description": "Description",
+      "location": "Location",
+      "reportComments": "Report Comments",
+      "reportLog": "Report Log",
+      "victim": "Victim",
+      "owner": "Owner"
+    }
+  }
+}

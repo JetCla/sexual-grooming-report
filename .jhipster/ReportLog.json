@@ -1,0 +1,38 @@
+{
+  "applications": "*",
+  "changelogDate": "20221108052804",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "report_log",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "change",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ReportLog",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "report",
+      "otherEntityRelationshipName": "reportLog",
+      "relationshipName": "reportLogs",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "reportLog",
+      "relationshipName": "updatedBy",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

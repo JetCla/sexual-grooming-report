@@ -1,0 +1,55 @@
+entity User {
+
+}
+entity Report {
+    number String required, 
+    date LocalDate required,
+    officeAssigned String,
+    description String,
+    location String
+}
+
+entity ReportLog {
+	date LocalDate required,
+    change String
+}
+
+entity ReportComments {
+	date LocalDate required
+}
+
+entity Victim {
+	firstName String,
+    lastName String,
+    age Integer,
+    city String,
+    state String, 
+    country String, 
+    observations String
+}
+
+relationship ManyToOne {
+	Report{victim} to Victim
+    Report{owner} to User
+}
+
+relationship OneToMany {
+	Report to ReportComments{reportComments}
+    Report to ReportLog {reportLogs}
+	User to ReportComments{commentedBy}
+    User to ReportLog {updatedBy}
+}
+
+// Set pagination options
+paginate ReportComments, ReportLog with infinite-scroll
+paginate Report, Victim with pagination
+
+filter Victim, Report
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

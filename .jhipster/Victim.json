@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "changelogDate": "20221108052806",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "victim",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "observations",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "Victim",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

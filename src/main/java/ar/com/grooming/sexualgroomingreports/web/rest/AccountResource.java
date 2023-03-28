@@ -43,7 +43,6 @@ public class AccountResource {
      * @throws AccountResourceException {@code 500 (Internal Server Error)} if the user couldn't be returned.
      */
     @GetMapping("/account")
-    @SuppressWarnings("unchecked")
     public AdminUserDTO getAccount(Principal principal) {
         if (principal instanceof AbstractAuthenticationToken) {
             return userService.getUserFromAuthentication((AbstractAuthenticationToken) principal);

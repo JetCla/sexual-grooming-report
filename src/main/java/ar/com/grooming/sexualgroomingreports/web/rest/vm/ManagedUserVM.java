@@ -7,6 +7,8 @@ import ar.com.grooming.sexualgroomingreports.service.dto.AdminUserDTO;
  */
 public class ManagedUserVM extends AdminUserDTO {
 
+    private static final long serialVersionUID = 1L;
+
     public ManagedUserVM() {
         // Empty constructor needed for Jackson.
     }

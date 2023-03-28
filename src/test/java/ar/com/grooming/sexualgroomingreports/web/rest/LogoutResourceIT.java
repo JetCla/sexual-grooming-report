@@ -4,7 +4,9 @@ import static ar.com.grooming.sexualgroomingreports.test.util.OAuth2TestUtil.ID_
 import static ar.com.grooming.sexualgroomingreports.test.util.OAuth2TestUtil.authenticationToken;
 import static ar.com.grooming.sexualgroomingreports.test.util.OAuth2TestUtil.registerAuthenticationToken;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import ar.com.grooming.sexualgroomingreports.IntegrationTest;
 import ar.com.grooming.sexualgroomingreports.security.AuthoritiesConstants;

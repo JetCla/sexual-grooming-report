@@ -1,0 +1,26 @@
+{
+  "sexualGroomingReportsApp": {
+    "reportComments": {
+      "home": {
+        "title": "Report Comments",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Report Comments",
+        "createOrEditLabel": "Crear o editar Report Comments",
+        "notFound": "Ningún Report Comments encontrado"
+      },
+      "created": "Un nuevo Report Comments ha sido creado con el identificador {{ param }}",
+      "updated": "Un Report Comments ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Report Comments ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Report Comments {{ id }}?"
+      },
+      "detail": {
+        "title": "Report Comments"
+      },
+      "id": "ID",
+      "date": "Date",
+      "reportComments": "Report Comments",
+      "commentedBy": "Commented By"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "applications": "*",
+  "changelogDate": "20221108052803",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "report",
+  "fields": [
+    {
+      "fieldName": "number",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "officeAssigned",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "location",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "name": "Report",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "reportComments",
+      "otherEntityRelationshipName": "reportComments",
+      "relationshipName": "reportComments",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "reportLog",
+      "otherEntityRelationshipName": "reportLogs",
+      "relationshipName": "reportLog",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "victim",
+      "relationshipName": "victim",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "user",
+      "relationshipName": "owner",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

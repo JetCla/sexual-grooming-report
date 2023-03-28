@@ -1,0 +1,27 @@
+{
+  "sexualGroomingReportsApp": {
+    "reportLog": {
+      "home": {
+        "title": "Report Logs",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Report Log",
+        "createOrEditLabel": "Crear o editar Report Log",
+        "notFound": "Ningún Report Logs encontrado"
+      },
+      "created": "Un nuevo Report Log ha sido creado con el identificador {{ param }}",
+      "updated": "Un Report Log ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Report Log ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Report Log {{ id }}?"
+      },
+      "detail": {
+        "title": "Report Log"
+      },
+      "id": "ID",
+      "date": "Date",
+      "change": "Change",
+      "reportLogs": "Report Logs",
+      "updatedBy": "Updated By"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "sexualGroomingReportsApp": {
+    "victim": {
+      "home": {
+        "title": "Victims",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Victim",
+        "createOrEditLabel": "Crear o editar Victim",
+        "notFound": "Ningún Victims encontrado"
+      },
+      "created": "Un nuevo Victim ha sido creado con el identificador {{ param }}",
+      "updated": "Un Victim ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Victim ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Victim {{ id }}?"
+      },
+      "detail": {
+        "title": "Victim"
+      },
+      "id": "ID",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "age": "Age",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "observations": "Observations"
+    }
+  }
+}

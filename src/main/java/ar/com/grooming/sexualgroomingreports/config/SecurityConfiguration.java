@@ -1,11 +1,12 @@
 package ar.com.grooming.sexualgroomingreports.config;
 
-import ar.com.grooming.sexualgroomingreports.security.*;
+import ar.com.grooming.sexualgroomingreports.security.AuthoritiesConstants;
 import ar.com.grooming.sexualgroomingreports.security.SecurityUtils;
 import ar.com.grooming.sexualgroomingreports.security.oauth2.AudienceValidator;
 import ar.com.grooming.sexualgroomingreports.security.oauth2.CustomClaimConverter;
 import ar.com.grooming.sexualgroomingreports.security.oauth2.JwtGrantedAuthorityConverter;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
@@ -22,7 +23,11 @@ import org.springframework.security.oauth2.client.registration.ClientRegistratio
 import org.springframework.security.oauth2.core.DelegatingOAuth2TokenValidator;
 import org.springframework.security.oauth2.core.OAuth2TokenValidator;
 import org.springframework.security.oauth2.core.oidc.user.OidcUserAuthority;
-import org.springframework.security.oauth2.jwt.*;
+import org.springframework.security.oauth2.jwt.Jwt;
+import org.springframework.security.oauth2.jwt.JwtDecoder;
+import org.springframework.security.oauth2.jwt.JwtDecoders;
+import org.springframework.security.oauth2.jwt.JwtValidators;
+import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationConverter;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
